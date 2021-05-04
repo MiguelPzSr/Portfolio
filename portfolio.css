@@ -10,6 +10,19 @@ body header {
   background-color: rgba(95, 90, 90, 0.534);
 }
 
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header nav .icons {
+  height: 5vh;
+  width: 2.5vw;
+}
+
 body main {
   padding: 5px;
 }
@@ -78,12 +91,98 @@ body main .proyectBox .p4 {
 body main .exerciseBox {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (33.3%)[3];
+      grid-template-columns: repeat(3, 33.3%);
+  -ms-grid-rows: 5% 40% 35% 20%;
+      grid-template-rows: 5% 40% 35% 20%;
   margin: 15px;
 }
 
-.icons {
-  width: 2.5%;
-  height: 2.5%;
+body main .exerciseBox h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/ 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/ 2;
+}
+
+body main .exerciseBox .ej1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/ 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/ 3;
+}
+
+body main .exerciseBox .ej2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/ 3;
+}
+
+body main .exerciseBox .ej3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/ 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/ 3;
+}
+
+body main .exerciseBox .ej4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/ 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/ 4;
+}
+
+body main .exerciseBox .ej5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/ 4;
+}
+
+body main .exerciseBox .ej6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/ 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/ 4;
+}
+
+body main .exerciseBox .ej7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/ 4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/ 5;
+}
+
+body footer {
+  padding: 10px;
+}
+
+body footer .F5 {
+  height: 15vh;
+  width: 12.5vw;
 }
 
 a {

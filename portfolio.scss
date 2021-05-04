@@ -8,6 +8,14 @@ body{
     header{
         padding: 10px;
         background-color: rgba(95, 90, 90, 0.534);
+        nav{
+            display: flex;
+            justify-content: space-around;
+            .icons{
+                height: 5vh;
+                width: 2.5vw;
+            }
+        }
     }
     
     main{
@@ -52,15 +60,57 @@ body{
 
         .exerciseBox{
             display: grid;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-template-rows: 5% 40% 35% 20%;
             margin: 15px;
+
+            h2{
+                grid-column: 1/ 4;
+                grid-row: 1/ 2;
+            }
+            .ej1{
+                grid-column: 1/ 2;
+                grid-row: 2/ 3;
+            }
+            .ej2{
+                grid-column: 2/ 3;
+                grid-row: 2/ 3;
+            }
+            .ej3{
+                grid-column: 3/ 4;
+                grid-row: 2/ 3;
+            }
+            .ej4{
+                grid-column: 1/ 2;
+                grid-row: 3/ 4;
+            }
+            .ej5{
+                grid-column: 2/ 3;
+                grid-row: 3/ 4;
+            }
+            .ej6{
+                grid-column: 3/ 4;
+                grid-row: 3/ 4;
+            }
+            .ej7{
+                display:flex;
+                justify-content: center;
+                grid-column: 1/ 4;
+                grid-row: 4/ 5;
+            }
+        }
+    }
+
+    footer{
+        padding: 10px;
+
+        .F5{
+            height: 15vh;
+            width: 12.5vw;
         }
     }
 }
 
-.icons{
-    width: 2.5%;
-    height: 2.5%;
-}
 
 a{
     text-decoration: none;

@@ -7,7 +7,16 @@
 
 body header {
   padding: 10px;
-  background-color: rgba(95, 90, 90, 0.534);
+  background-color: #857f7f;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 5px 5px 25px #222 inset;
+          box-shadow: 5px 5px 25px #222 inset;
+  -webkit-filter: drop-shadow(5px 5px 10px #444);
+          filter: drop-shadow(5px 5px 10px #444);
 }
 
 body header nav {
@@ -18,23 +27,36 @@ body header nav {
       justify-content: space-around;
 }
 
-body header nav .icons {
+body header nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav a .icons {
   height: 5vh;
   width: 2.5vw;
 }
 
 body main {
   padding: 5px;
+  margin: 50px;
 }
 
 body main .presentationBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 15px;
 }
 
-body main .presentationBox img {
+body main .presentationBox section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .presentationBox section img {
   width: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -42,13 +64,17 @@ body main .presentationBox img {
   border-radius: 35%;
 }
 
+body main .presentationBox section div {
+  padding: 30px;
+}
+
 body main .proyectBox {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: 15% 45% 45%;
-      grid-template-rows: 15% 45% 45%;
+  -ms-grid-rows: 10% 50% 50%;
+      grid-template-rows: 10% 50% 50%;
   margin: 15px;
 }
 
@@ -96,6 +122,7 @@ body main .exerciseBox {
   -ms-grid-rows: 5% 40% 35% 20%;
       grid-template-rows: 5% 40% 35% 20%;
   margin: 15px;
+  margin-top: 40px;
 }
 
 body main .exerciseBox h2 {
@@ -177,12 +204,41 @@ body main .exerciseBox .ej7 {
 }
 
 body footer {
+  padding: 20px;
+  background-color: rgba(95, 90, 90, 0.534);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 5px 5px 25px #222 inset;
+          box-shadow: 5px 5px 25px #222 inset;
+}
+
+body footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer a .F5 {
+  height: 20vh;
+  width: 10vw;
   padding: 10px;
 }
 
-body footer .F5 {
-  height: 15vh;
-  width: 12.5vw;
+body footer ul {
+  list-style: none;
+}
+
+.proyectImage {
+  width: 15vw;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 20vh;
 }
 
 a {
